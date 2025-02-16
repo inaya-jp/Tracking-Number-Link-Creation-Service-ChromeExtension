@@ -4,7 +4,7 @@ document.getElementById('trackButton').addEventListener('click', () => {
   const trackingNumber = document.getElementById('trackingNumber').value.trim();
   if (trackingNumber !== '') {
     // 追跡番号がある場合、URLを作成
-    const url = `https://www.trackings.ne.jp/?trackingNumber=${encodeURIComponent(trackingNumber)}&utm_source=extension&utm_medium=popup`;
+    const url = `https://www.trackings.a-z.ne.jp/?trackingNumber=${encodeURIComponent(trackingNumber)}&utm_source=extension&utm_medium=popup`;
     chrome.tabs.create({ url: url });
     document.getElementById('status').textContent = 'リンクを作成しました。';
   } else {
