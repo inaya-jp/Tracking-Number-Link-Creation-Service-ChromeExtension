@@ -12,7 +12,7 @@ chrome.contextMenus.create({
     if (info.menuItemId === "createTrackingLink") {
       const selectedText = info.selectionText;
       if (selectedText) {
-        const url = `https://www.trackings.ne.jp/?trackingNumber=${encodeURIComponent(selectedText)}&utm_source=extension&utm_medium=menu`;
+        const url = `https://www.trackings.a-z.ne.jp/?trackingNumber=${encodeURIComponent(selectedText)}&utm_source=extension&utm_medium=menu`;
         chrome.tabs.create({ url: url });
       }
     }
